@@ -3,6 +3,21 @@
 ---
 @charset "utf-8";
 
+/*
+
+
+
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Raleway Dots', cursive;
+*/
+
+$source-sans: 'Source Sans Pro', sans-serif;
+$raleway: 'Raleway Dots', cursive;
+
+body {
+  font-family: $source-sans;
+}
+
 
 
 // Our variables
@@ -13,8 +28,8 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$background-color: #fdfdfd;
+$text-color:       white;
+$background-color: rgb(207,33,48);
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -50,3 +65,13 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -150px;
+}
